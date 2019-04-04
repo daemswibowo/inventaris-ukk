@@ -18,3 +18,5 @@ php artisan migrate --seed
 ```
 
 jika terjadi kesalahan, pastikan Anda menjalankan perintah ini di direktori aplikasi (`inventaris-ukk`) dan konfigurasi koneksi ke database sudah benar
+
+login dengan akun `admin@gmail.com` dan password `admin`
