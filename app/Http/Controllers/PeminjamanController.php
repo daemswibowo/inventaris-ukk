@@ -86,8 +86,9 @@ class PeminjamanController extends Controller
   public function edit($id)
   {
     $peminjaman = Peminjaman::findOrFail($id);
+    $pegawais = Pegawai::pluck('nama','id');
 
-    return view('peminjaman.edit', compact('peminjaman'));
+    return view('peminjaman.edit', compact('peminjaman','pegawais'));
   }
 
   /**

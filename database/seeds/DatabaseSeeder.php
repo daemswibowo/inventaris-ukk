@@ -20,7 +20,6 @@ class DatabaseSeeder extends Seeder
     foreach ($ruangs as $key => $ruang) {
       App\Ruang::updateOrCreate(['nama' => $ruang,'kode' => strtoupper($ruang),'keterangan' => $ruang]);
     }
-    App\Pegawai::truncate();
     $faker = Faker\Factory::create('id_ID'); // create a ID faker
     for ($i = 0; $i < 10; $i++) {
       App\Pegawai::updateOrCreate(['nama' => $faker->name,'nip' => $faker->randomNumber(),'alamat' => $faker->address]);
